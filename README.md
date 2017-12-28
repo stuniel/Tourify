@@ -21,7 +21,7 @@
 * Fork and clone the project:
 
 ```
-git clone https://github.com/ReactJSResources/react-webpack-babel.git
+https://github.com/stuniel/Tourify.git
 ```
 
 * Then install the dependencies:
