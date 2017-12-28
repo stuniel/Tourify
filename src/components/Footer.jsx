@@ -1,12 +1,9 @@
 import React from 'react';
 
-class Footer extends React.Component {
-
-  render() {
-    return (
-    <div></div>
-    )
-  }
-}
+const Footer = () => (
+  <div className="bottom-footer">
+    <span>by <a href="https://github.com/stuniel" target="_blank">Daniel Studzinski</a></span>
+  </div>
+)
 
 export default Footer;

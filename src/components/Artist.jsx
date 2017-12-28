@@ -1,33 +1,25 @@
 import React from 'react';
+import { Row, Col } from 'react-materialize';
 
-class Artist extends React.Component {
-
-  render() {
-    const details = this.props.details;
-    const name = details.name;
-    const image = details.image_url;
-    const facebook = details.facebook_page_url;
-    return (
-      <div className="col s12">
-        <div className="card">
-          <div className="card-content waves-effect waves-block waves-light s12 m9">
-            <div className="row valign-wrapper">
-
-              <div className="col s12 m6 l3">
-                <img className="responsive-img" src={image} alt={`Photo of ${name}`} />
-              </div>
-
-              <div className="col s12 m6 l9">
-                <h4 className="header2">{name}</h4>
-                <a target="_blank" href={facebook}>Facebook Page</a>
-              </div>
-              
+const Artist = ({name, image, facebook, url}) => (
+  <Col className="s12 artist">
+    <div className="card hoverable">
+      <div className="card-content s12 m9">
+        <Row className="valign-wrapper">
+          <Col className="s12 m6 l3">
+            <img className="responsive-img z-depth-1" src={image} alt={name} />
+          </Col>
+          <Col className="s12 m6 l9">
+            <div className="center">
+              <h4 className="header2">{name}</h4>
+              <p><a target="_blank" href={url}>More info</a></p>
+              <p><a target="_blank" href={facebook}>Facebook Page</a></p>
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
-    )
-  }
-}
+    </div>
+  </Col>
+)
 
 export default Artist;
