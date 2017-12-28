@@ -1,0 +1,27 @@
+body {
+  background: #eee;
+}
+
+.bottom-footer {
+  padding: 1rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+.autocomplete-content {
+  position: absolute;
+}
+
+.event_btn_wrapper {
+  bottom: 0;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .valign-wrapper {
+    display: inherit;
+  }
+}
