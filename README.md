@@ -3,6 +3,8 @@
     <h3 align="center">Music Events App<br></h3>
 </p>
 
+This web app was created in 12/2017.
+
 ### What I used
 
 * React 
