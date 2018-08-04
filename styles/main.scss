@@ -1,0 +1,10 @@
+$main-color: #333;
+
+body {
+  // background: #ece7e7;
+  background: $main-color;
+}
+
+.autocomplete-content {
+   position: absolute;
+}
